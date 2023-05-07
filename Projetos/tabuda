@@ -1,0 +1,28 @@
+/*Algoritmo que faz a tabuada de um número inteiro aleatório*/
+
+#include <stdio.h>
+// Começo do Algoritmo
+int main()
+{   
+    // Var declaration
+    int num; // Var de entrada 
+    int tabuada; // Var para fazer a tabuada
+    int multi = 1; // Var para ser o multiplicador 
+    
+    // Data input
+    printf("Digite um  número inteiro para ver sua tabuada: "); // recebe um número inteiro aleatório
+    scanf("%d", &num); // armazena na var de entrada (num)
+    
+    // Data output
+    printf("Tabuada do %d\n", num); // formatação da tabuada
+    
+    // Process 
+    while (multi <= 10){ // executa enquanto o multiplicador for menor ou igual a 10
+        tabuada = num * multi; // faz as multiplicação de 1 á 10 vezes algum número 
+        // Data output
+        printf("%d x %d = %d\n", num, multi, tabuada); // tabuada de algum número formatada
+        multi++; // adiciona um número para var multi enquanto o while for verdadeiro
+    }
+    // acaba sem problemas
+    return 0;
+}
