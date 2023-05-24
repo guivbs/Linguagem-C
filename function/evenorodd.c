@@ -29,10 +29,10 @@ int main() {
     result = even_odd(n);
 
     if (result == 1) {
-        printf("EVEN (PAR)");
+        printf("%d is EVEN (PAR)", n);
     }
     else if (result == 0) {
-        printf("ODD (IMPAR)");
+        printf("%d is ODD (IMPAR)", n);
     }
     else {
         printf("ZERO");
