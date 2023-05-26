@@ -5,9 +5,24 @@ de cima para baixo. O jogo começa com uma pedra em todas as casas das linhas 1,
 
 #include <stdio.h>
 
+char tabuleiro (){
+    int tabuleiroPadrao;
+
+    for (int i = 0; i < 8; i++){
+        for (int j = 0; j < 8; j++){
+            printf("* ");
+        }
+        printf("\n");   
+    }
+    return tabuleiroPadrao;
+}
+
 int main()
 {
-    printf("");
+    int chamaTabuleiro;
+    printf("O jogo vai começar.");
+
+    chamaTabuleiro = tabuleiro();
 
     return 0;
 }
